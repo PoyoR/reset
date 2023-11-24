@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/ineq_png" />
+
+    <TextView
+        android:id="@+id/tvHabilitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#388E3C"
+        android:padding="5dp"
+        android:text="Administrador habilitado"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvNoHabilitado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#D32F2F"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:text="Administrador no habilitado"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Para porder resetear el equipo debe habilitar el permiso de administración "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Habilitar permiso" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Restablecer equipo" />
+</LinearLayout>
